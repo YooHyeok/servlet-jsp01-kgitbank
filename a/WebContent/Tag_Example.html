@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>개인 정보 입력 화면</title>
+</head>
+<body>
+
+<form action="/UserInfo.do" method=post>
+이름 : <input type=text name=name><br>
+아이디 : <input type=text name=id><br>
+패스워드 : <input type=password name=pw><br><br>
+
+성별 : <input type=radio name=gender value=M>남
+<input type=radio name=gender value=F>여
+<br><br>
+
+연락처 : <input type=tel name=tel><br>
+메일 수신 여부 : <input type=checkbox name=agree value=1>공지메일
+<input type=checkbox name=agree value=2>광고메일
+<input type=checkbox name=agree value=3>배송 확인 메일<br><br>
+
+날짜 : <input type=date name=date><br>
+직업 : <select name=job size=>
+<option value=1>회사원</option>
+<option value=2>주부</option>
+<option value=3>무직</option>
+<option value=4>학생</option>
+
+</select><br><br>
+
+<input type=reset value="취소">
+<input type=submit value="확인"> 
+
+</form>
+</body>
+</html>

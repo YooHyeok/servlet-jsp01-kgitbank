@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력 폼 예제</title>
+</head>
+<body>
+<form action="/First.do" method=post>
+
+아이디 : <input type=text name=id value="아이디를 입력하세요"><br>
+비밀번호 : <input type=password name=password><br><br>
+
+이름 : <input type=text name=name><br><br>
+성별 : <input type=radio name=gender value=M>남
+<input type=radio name=gender value=F>여<br><br>
+생년월일 : <input type=date name=date><br><br>
+
+학년 : <input type=number name=grade min=1 max=5 step=1><br><br>
+
+연락처 : <input type=tel name=tel pattern="^[0][1][0-9]-\d{3,4}-\d{4}$"><br><br>
+
+이메일 : <input type=email name=email><br><br>
+
+취미<br>
+<input type=checkbox name=hobby value=1>배틀그라운드
+<input type=checkbox name=hobby value=2>리그오브레전드
+<input type=checkbox name=hobby value=3>재즈피아노
+<input type=checkbox name=hobby value=4>음악감상
+<input type=checkbox name=hobby value=5>음악서칭
+<input type=checkbox name=hobby value=6>하드웨어 정보 수집<br><br>
+사진 : <input type=file name=pic accept="gif/image"><br><br>
+
+자기소개 : <textarea cols=30 rows=5 name=introduce>
+입력하세요.
+</textarea><br><br>
+
+지역:<select name=area size=>
+<option value=1>서울</option>
+<option value=2>경기</option>
+<option value=3>강원</option>
+<option value=4>충남</option>
+<option value=5>충북</option>
+<option value=6>전남</option>
+<option value=7>전북</option>
+<option value=8>경남</option>
+<option value=9>경북</option>
+<option value=10>인천</option>
+<option value=11>광주</option>
+<option value=12>세종</option>
+<option value=13>부산</option>
+</select><br><br>
+
+
+<input type=submit> <input type=reset>
+
+</form>
+</body>
+</html>
